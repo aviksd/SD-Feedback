@@ -1,0 +1,2307 @@
+<html
+        xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Jira</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\.";
+    mso-displayed-thousand-separator:"\,";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#205081" height="30">
+        <td colspan="13">
+            <img src="https://smarterdharma.atlassian.net/images/icon-jira-software-logo.png" width="57" height="30" border="0" alt="Jira">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="13">
+            <a href="https://smarterdharma.atlassian.net/issues/?jql=project+%3D+SF+ORDER+BY+key+ASC%2C+created+DESC">Jira</a>
+        </td>
+    </tr>
+    <tr>
+                <td colspan="13">
+            Displaying <strong>72</strong> issues at <strong>11/Sep/23 10:01 AM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+                                        <table id="issuetable" class="aui " border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                                                        Issue Type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                                                        Key
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                                                        Summary
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-description" data-id="description">
+                                                        Description
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10034" data-id="customfield_10034">
+                                                        Category
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-labels" data-id="labels">
+                                                        Labels
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10004" data-id="customfield_10004">
+                                                        Impact
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10006" data-id="customfield_10006">
+                                                        Change risk
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-reporter" data-id="reporter">
+                                                        Reporter
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                                                        Assignee
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                                                        Priority
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                                                        Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-created" data-id="created">
+                                                        Created
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow10687" rel="10687" data-issuekey="SF-1" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-1" href="https://smarterdharma.atlassian.net/browse/SF-1">SF-1</a>
+</td>
+                                            <td class="summary"><p>
+                So much unused space on the homepage.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 7:41 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10688" rel="10688" data-issuekey="SF-2" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-2" href="https://smarterdharma.atlassian.net/browse/SF-2">SF-2</a>
+</td>
+                                            <td class="summary"><p>
+                The arrangement of list of projects can be much better.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:32 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10689" rel="10689" data-issuekey="SF-3" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-3" href="https://smarterdharma.atlassian.net/browse/SF-3">SF-3</a>
+</td>
+                                            <td class="summary"><p>
+                Statistical summary of all the projects on the homepage.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:33 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10690" rel="10690" data-issuekey="SF-4" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-4" href="https://smarterdharma.atlassian.net/browse/SF-4">SF-4</a>
+</td>
+                                            <td class="summary"><p>
+                More ways to filter projects than just name.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:34 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10691" rel="10691" data-issuekey="SF-5" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-5" href="https://smarterdharma.atlassian.net/browse/SF-5">SF-5</a>
+</td>
+                                            <td class="summary"><p>
+                Total project count can be shown on the top.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:34 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10692" rel="10692" data-issuekey="SF-6" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-6" href="https://smarterdharma.atlassian.net/browse/SF-6">SF-6</a>
+</td>
+                                            <td class="summary"><p>
+                On the project details page the alignment can be better and blank space could be used.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:35 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10693" rel="10693" data-issuekey="SF-7" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-7" href="https://smarterdharma.atlassian.net/browse/SF-7">SF-7</a>
+</td>
+                                            <td class="summary"><p>
+                Misaligned save buttons and alignment can be better in checkboxes.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    bugs</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:36 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10694" rel="10694" data-issuekey="SF-8" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-8" href="https://smarterdharma.atlassian.net/browse/SF-8">SF-8</a>
+</td>
+                                            <td class="summary"><p>
+                Tooltips and info tags can be put on the insights page.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:38 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10695" rel="10695" data-issuekey="SF-9" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-9" href="https://smarterdharma.atlassian.net/browse/SF-9">SF-9</a>
+</td>
+                                            <td class="summary"><p>
+                Much unused space on the catalog page.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:38 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10696" rel="10696" data-issuekey="SF-10" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-10" href="https://smarterdharma.atlassian.net/browse/SF-10">SF-10</a>
+</td>
+                                            <td class="summary"><p>
+                Some text may be getting clipped in secondary impact page on intervention details page
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    bugs</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:40 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10697" rel="10697" data-issuekey="SF-11" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-11" href="https://smarterdharma.atlassian.net/browse/SF-11">SF-11</a>
+</td>
+                                            <td class="summary"><p>
+                The round graphs could have been bigger (Ref: Contributions to total savings)
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:41 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10698" rel="10698" data-issuekey="SF-12" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-12" href="https://smarterdharma.atlassian.net/browse/SF-12">SF-12</a>
+</td>
+                                            <td class="summary"><p>
+                Misaligned popup
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    bugs</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:43 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10699" rel="10699" data-issuekey="SF-13" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-13" href="https://smarterdharma.atlassian.net/browse/SF-13">SF-13</a>
+</td>
+                                            <td class="summary"><p>
+                Sometimes some pages are going blank.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    System Design
+</td>
+                                            <td class="labels">    bugs</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:44 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10700" rel="10700" data-issuekey="SF-14" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-14" href="https://smarterdharma.atlassian.net/browse/SF-14">SF-14</a>
+</td>
+                                            <td class="summary"><p>
+                Add loading spinners on all the pages.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:45 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10701" rel="10701" data-issuekey="SF-15" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-15" href="https://smarterdharma.atlassian.net/browse/SF-15">SF-15</a>
+</td>
+                                            <td class="summary"><p>
+                If someone is new to construction and sustainability, lets introduce him to it by having a wiki page and learning page.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:46 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10702" rel="10702" data-issuekey="SF-16" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-16" href="https://smarterdharma.atlassian.net/browse/SF-16">SF-16</a>
+</td>
+                                            <td class="summary"><p>
+                Have a design system to manage inconsistencies and better UI design practices.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Shubham Londhe
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:46 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10703" rel="10703" data-issuekey="SF-17" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-17" href="https://smarterdharma.atlassian.net/browse/SF-17">SF-17</a>
+</td>
+                                            <td class="summary"><p>
+                Layering the interface by user category to limit the information displayed may help navigation for each user type.
+    </p>
+</td>
+                                            <td class="description">      Reporter: Pratishtha
+  </td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:50 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10704" rel="10704" data-issuekey="SF-18" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-18" href="https://smarterdharma.atlassian.net/browse/SF-18">SF-18</a>
+</td>
+                                            <td class="summary"><p>
+                Additionally, for a user with a basic understanding, short forms (IRR, etc.) and technical terms ( CAPEX, OPEX, etc.) can be explained.
+    </p>
+</td>
+                                            <td class="description">      Reporter: Pratishtha
+  </td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:53 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10705" rel="10705" data-issuekey="SF-19" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-19" href="https://smarterdharma.atlassian.net/browse/SF-19">SF-19</a>
+</td>
+                                            <td class="summary"><p>
+                A list of additional documents to be uploaded in the &#39; File Upload&#39; section along with a guide to maintaining the format could help increase efficiency in certification deliverables.
+    </p>
+</td>
+                                            <td class="description">      Reporter: Pratishtha
+  </td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:54 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10706" rel="10706" data-issuekey="SF-20" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-20" href="https://smarterdharma.atlassian.net/browse/SF-20">SF-20</a>
+</td>
+                                            <td class="summary"><p>
+                The SD+ scale could be explained to the user on how it is relevant to them. In addition, it would help to relate it to IGBC certification levels to convey the status better.
+    </p>
+</td>
+                                            <td class="description">      Reporter: Pratishtha
+  </td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 8:54 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10707" rel="10707" data-issuekey="SF-21" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-21" href="https://smarterdharma.atlassian.net/browse/SF-21">SF-21</a>
+</td>
+                                            <td class="summary"><p>
+                The data regarding weather conditions displayed in the section &#39;Location Insights&#39; can be made more useful by describing the type of built environment suitable for a particular climate zone.
+    </p>
+</td>
+                                            <td class="description">      Reporter: Pratishtha<br/>
+<br/>
+(contd.) What would it need to be comfortable in a, say, Hot and dry climate? What are the critical months to consider for indoor comfort?
+  </td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 9:04 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10708" rel="10708" data-issuekey="SF-22" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-22" href="https://smarterdharma.atlassian.net/browse/SF-22">SF-22</a>
+</td>
+                                            <td class="summary"><p>
+                It would be helpful if the user could select their site on the map.
+    </p>
+</td>
+                                            <td class="description">      Reporter: Pratishtha<br/>
+<br/>
+(contd.) The location data can be enriched by linking it to sources like &#39;OpenStreetMap&#39; to get more information about the buildings and general surroundings of the site. A feature to add the information manually may help in case of unavailable data.
+  </td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 9:05 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10709" rel="10709" data-issuekey="SF-23" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-23" href="https://smarterdharma.atlassian.net/browse/SF-23">SF-23</a>
+</td>
+                                            <td class="summary"><p>
+                Adding early design cues (orientation, possible shading strategies, etc.) based on the site data can make the process of detailing a sustainable design at later stages more efficient.
+    </p>
+</td>
+                                            <td class="description">      Reporter: Pratishtha<br/>
+<br/>
+(contd.) An option for providing these cues could be linking to &#39;Climate Consultant&#39; which gives out a list of possible strategies based on the weather data for a particular location.
+  </td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 9:07 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10710" rel="10710" data-issuekey="SF-24" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-24" href="https://smarterdharma.atlassian.net/browse/SF-24">SF-24</a>
+</td>
+                                            <td class="summary"><p>
+                Considering that information of this magnitude may result in a few technical discrepancies, it could be helpful to maintain separate documentation to keep a check on the same.
+    </p>
+</td>
+                                            <td class="description">      Reporter: Pratishtha<br/>
+<br/>
+!IM1.png|width=807,height=462!<br/>
+<br/>
+!IM2.png|width=803,height=194!
+  </td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 9:10 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10711" rel="10711" data-issuekey="SF-25" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-25" href="https://smarterdharma.atlassian.net/browse/SF-25">SF-25</a>
+</td>
+                                            <td class="summary"><p>
+                Color themes could be improved.
+    </p>
+</td>
+                                            <td class="description">      This feedback is regarding the landing ‘projects’ page and ‘edit details’ page. Color scheme and uniformity of scheme between buttons for example is not present. E.g.. View insights button vs create project button.
+  </td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 11:46 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10712" rel="10712" data-issuekey="SF-26" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-26" href="https://smarterdharma.atlassian.net/browse/SF-26">SF-26</a>
+</td>
+                                            <td class="summary"><p>
+                Buttons should be more visually appealing
+    </p>
+</td>
+                                            <td class="description">      This feedback is regarding the landing ‘projects’ page and ‘edit details’ page. Any ‘action’ buttons should be eye catching. The following one for the create project is not.<br/>
+<br/>
+<br/>
+!image-20230907-084006.png|width=559,height=180!
+  </td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 11:47 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10713" rel="10713" data-issuekey="SF-27" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-27" href="https://smarterdharma.atlassian.net/browse/SF-27">SF-27</a>
+</td>
+                                            <td class="summary"><p>
+                Margin and padding should be better.
+    </p>
+</td>
+                                            <td class="description">      {panel:bgColor=#deebff}<br/>
+This is a general comment. Spacing between elements should be managed and follow UI best practices. Example, large margin between location search box and Built up area heading.<br/>
+<br/>
+<br/>
+{panel}<br/>
+<br/>
+!image-20230907-084131.png|width=1085,height=497!
+  </td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 11:55 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10714" rel="10714" data-issuekey="SF-28" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-28" href="https://smarterdharma.atlassian.net/browse/SF-28">SF-28</a>
+</td>
+                                            <td class="summary"><p>
+                We can use tooltips, for giving more info to the users.
+    </p>
+</td>
+                                            <td class="description">      This feedback is regarding project details page. The subheading for each input explaining what it is, can be a tooltip.<br/>
+<br/>
+!image-20230907-084331.png|width=676,height=73!
+  </td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 11:55 AM </td>
+                    </tr>
+
+
+                <tr id="issuerow10715" rel="10715" data-issuekey="SF-29" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-29" href="https://smarterdharma.atlassian.net/browse/SF-29">SF-29</a>
+</td>
+                                            <td class="summary"><p>
+                Project Location box can be made wide.
+    </p>
+</td>
+                                            <td class="description">      This is for project details page.<br/>
+<br/>
+!image-20230907-084408.png|width=540,height=103!
+  </td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:34 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10716" rel="10716" data-issuekey="SF-30" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-30" href="https://smarterdharma.atlassian.net/browse/SF-30">SF-30</a>
+</td>
+                                            <td class="summary"><p>
+                Insights page -&gt; You’re 1 times more sustainable?? (This doesn&#39;t seems good. Times can be replaced by Level).
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:35 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10717" rel="10717" data-issuekey="SF-31" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-31" href="https://smarterdharma.atlassian.net/browse/SF-31">SF-31</a>
+</td>
+                                            <td class="summary"><p>
+                Right side -&gt; Energy, water, waste -&gt; No noticeable difference between enabled &amp; disabled ones.
+    </p>
+</td>
+                                            <td class="description">      This is referencing the disabled materials goals tab. It is not visually clear that it is not clickable.<br/>
+<br/>
+!image-20230907-084550.png|width=499,height=179!
+  </td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:36 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10718" rel="10718" data-issuekey="SF-32" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-32" href="https://smarterdharma.atlassian.net/browse/SF-32">SF-32</a>
+</td>
+                                            <td class="summary"><p>
+                Some HelpDocs/Videos can be there to help people understand the system.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:37 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10719" rel="10719" data-issuekey="SF-33" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-33" href="https://smarterdharma.atlassian.net/browse/SF-33">SF-33</a>
+</td>
+                                            <td class="summary"><p>
+                Details pages UI can be very improved.
+    </p>
+</td>
+                                            <td class="description">      General comment for feedback that is covered elsewhere.
+  </td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:37 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10720" rel="10720" data-issuekey="SF-34" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-34" href="https://smarterdharma.atlassian.net/browse/SF-34">SF-34</a>
+</td>
+                                            <td class="summary"><p>
+                Labels should not be used for inputs. We can use tooltips instead.
+    </p>
+</td>
+                                            <td class="description">      A duplicate of [https://smarterdharma.atlassian.net/browse/SF-28|https://smarterdharma.atlassian.net/browse/SF-28|smart-link] 
+  </td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:38 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10721" rel="10721" data-issuekey="SF-35" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-35" href="https://smarterdharma.atlassian.net/browse/SF-35">SF-35</a>
+</td>
+                                            <td class="summary"><p>
+                On the projects page, when no project is selected. Then, edit details should not be there.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    bugs</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:39 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10722" rel="10722" data-issuekey="SF-36" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-36" href="https://smarterdharma.atlassian.net/browse/SF-36">SF-36</a>
+</td>
+                                            <td class="summary"><p>
+                View Insights button should also be removed, when no project is selected.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    bugs</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:40 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10723" rel="10723" data-issuekey="SF-37" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-37" href="https://smarterdharma.atlassian.net/browse/SF-37">SF-37</a>
+</td>
+                                            <td class="summary"><p>
+                Create project button(since it is a callout button) could be improved in the projects page.
+    </p>
+</td>
+                                            <td class="description">      Covered in [https://smarterdharma.atlassian.net/browse/SF-26|https://smarterdharma.atlassian.net/browse/SF-26|smart-link] 
+  </td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    bugs</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:44 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10724" rel="10724" data-issuekey="SF-38" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-38" href="https://smarterdharma.atlassian.net/browse/SF-38">SF-38</a>
+</td>
+                                            <td class="summary"><p>
+                Default picture for the project listing can be there.
+    </p>
+</td>
+                                            <td class="description">      This is for the project selection landing page.<br/>
+<br/>
+<br/>
+!image-20230907-084958.png|width=384,height=284!
+  </td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:45 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10725" rel="10725" data-issuekey="SF-39" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-39" href="https://smarterdharma.atlassian.net/browse/SF-39">SF-39</a>
+</td>
+                                            <td class="summary"><p>
+                Sidebar is missing in the projects page.
+    </p>
+</td>
+                                            <td class="description">      This is referencing the Navigation and goals panels on the left and right of the page.
+  </td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:46 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10726" rel="10726" data-issuekey="SF-40" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-40" href="https://smarterdharma.atlassian.net/browse/SF-40">SF-40</a>
+</td>
+                                            <td class="summary"><p>
+                Sustainability level bar - There can be more info on what was done. The can be points shown only.
+    </p>
+</td>
+                                            <td class="description">      Additional information about what is the delta between baseline and current sustainability level (interventions that got us there) and the delta for the next level and current state (Interventions that can GET us there) will be helpful.<br/>
+<br/>
+!image-20230907-085232.png|width=1445,height=292!
+  </td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:47 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10727" rel="10727" data-issuekey="SF-41" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-41" href="https://smarterdharma.atlassian.net/browse/SF-41">SF-41</a>
+</td>
+                                            <td class="summary"><p>
+                There should be functionality to create a duplicate project.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:47 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10728" rel="10728" data-issuekey="SF-42" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-42" href="https://smarterdharma.atlassian.net/browse/SF-42">SF-42</a>
+</td>
+                                            <td class="summary"><p>
+                Financial Impact Section - Padding is not good - While the data is loading.
+    </p>
+</td>
+                                            <td class="description">      !image-20230907-085330.png|width=2061,height=212!
+  </td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Ankit Kumar Sharma
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 12:48 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10729" rel="10729" data-issuekey="SF-43" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-43" href="https://smarterdharma.atlassian.net/browse/SF-43">SF-43</a>
+</td>
+                                            <td class="summary"><p>
+                Insights Page - Project details not available at a glance, have to go to the project details page and flip through
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:04 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10730" rel="10730" data-issuekey="SF-44" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-44" href="https://smarterdharma.atlassian.net/browse/SF-44">SF-44</a>
+</td>
+                                            <td class="summary"><p>
+                Insights page - SD+ sustainability is not explained very well. As a user I do not know why I should care.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:07 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10731" rel="10731" data-issuekey="SF-45" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-45" href="https://smarterdharma.atlassian.net/browse/SF-45">SF-45</a>
+</td>
+                                            <td class="summary"><p>
+                Insights page - Sustainability goals feel arbit and cherry picked
+    </p>
+</td>
+                                            <td class="description">      Eg. SD+ scale cares about self reliance of energy (so does resource saving) and goals section cares about one strategy ‘rooftop solar’
+  </td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:07 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10732" rel="10732" data-issuekey="SF-46" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-46" href="https://smarterdharma.atlassian.net/browse/SF-46">SF-46</a>
+</td>
+                                            <td class="summary"><p>
+                Insights page - AQI &amp; Annual Weather do not provide any value to the use case
+    </p>
+</td>
+                                            <td class="description">      It buries IGBC insights behind a click
+  </td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:08 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10733" rel="10733" data-issuekey="SF-47" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-47" href="https://smarterdharma.atlassian.net/browse/SF-47">SF-47</a>
+</td>
+                                            <td class="summary"><p>
+                Insights page - It is not clear where our leverages (actionable insights on areas of improvement) are.
+    </p>
+</td>
+                                            <td class="description">      E.g. we need to answer the question: What do I change to get the most value (low capex, high value)?
+  </td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:09 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10734" rel="10734" data-issuekey="SF-48" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-48" href="https://smarterdharma.atlassian.net/browse/SF-48">SF-48</a>
+</td>
+                                            <td class="summary"><p>
+                Insights page - Names of goals are not all self explanatory
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:11 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10735" rel="10735" data-issuekey="SF-49" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-49" href="https://smarterdharma.atlassian.net/browse/SF-49">SF-49</a>
+</td>
+                                            <td class="summary"><p>
+                Insights page - Intervention names in the intervention cards are not hyperlinks
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:11 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10736" rel="10736" data-issuekey="SF-50" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-50" href="https://smarterdharma.atlassian.net/browse/SF-50">SF-50</a>
+</td>
+                                            <td class="summary"><p>
+                Insights page - Explore IGBC certification does not yet link to the certifications page
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:12 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10737" rel="10737" data-issuekey="SF-51" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-51" href="https://smarterdharma.atlassian.net/browse/SF-51">SF-51</a>
+</td>
+                                            <td class="summary"><p>
+                Insights page - Missing total construction cost or % of total construction cost.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:14 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10738" rel="10738" data-issuekey="SF-52" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-52" href="https://smarterdharma.atlassian.net/browse/SF-52">SF-52</a>
+</td>
+                                            <td class="summary"><p>
+                Insights page - Insights page is missing total carbon emissions metric
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:14 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10739" rel="10739" data-issuekey="SF-53" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-53" href="https://smarterdharma.atlassian.net/browse/SF-53">SF-53</a>
+</td>
+                                            <td class="summary"><p>
+                Interventions Page - Missing category level goals OR resource savings to analyze the effect of checking and unchecking
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:16 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10740" rel="10740" data-issuekey="SF-54" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-54" href="https://smarterdharma.atlassian.net/browse/SF-54">SF-54</a>
+</td>
+                                            <td class="summary"><p>
+                Interventions Page - Missing interventions in this category that I have not achieved (perhaps grayed out and unavailable). Actionable insights to steer my design.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:16 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10741" rel="10741" data-issuekey="SF-55" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-55" href="https://smarterdharma.atlassian.net/browse/SF-55">SF-55</a>
+</td>
+                                            <td class="summary"><p>
+                Interventions Page - Need to flip through the tabs to review the comparison between categories. Instead of counting interventions, total emissions avoided may be more helpful.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:17 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10742" rel="10742" data-issuekey="SF-56" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-56" href="https://smarterdharma.atlassian.net/browse/SF-56">SF-56</a>
+</td>
+                                            <td class="summary"><p>
+                Interventions Page - Resource flow diagram units are daily vs annual on the main page.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:18 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10743" rel="10743" data-issuekey="SF-57" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-57" href="https://smarterdharma.atlassian.net/browse/SF-57">SF-57</a>
+</td>
+                                            <td class="summary"><p>
+                Interventions Page - Resource flow diagram are missing call outs for losses and flow values.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:18 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10744" rel="10744" data-issuekey="SF-58" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-58" href="https://smarterdharma.atlassian.net/browse/SF-58">SF-58</a>
+</td>
+                                            <td class="summary"><p>
+                Interventions Page - Resource flow diagram could be redone with a systems approach (identifying the boundary of the system).
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:18 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10745" rel="10745" data-issuekey="SF-59" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-59" href="https://smarterdharma.atlassian.net/browse/SF-59">SF-59</a>
+</td>
+                                            <td class="summary"><p>
+                Interventions Page - Filter, collapse, expand, sort capability in intervention list.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:19 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10746" rel="10746" data-issuekey="SF-60" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-60" href="https://smarterdharma.atlassian.net/browse/SF-60">SF-60</a>
+</td>
+                                            <td class="summary"><p>
+                Interventions Detailed Page - A description of this intervention at the top will be helpful
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:20 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10747" rel="10747" data-issuekey="SF-61" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-61" href="https://smarterdharma.atlassian.net/browse/SF-61">SF-61</a>
+</td>
+                                            <td class="summary"><p>
+                Interventions Detailed Page - Selecting a vendor does not change CAPEX
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    bugs</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:22 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10748" rel="10748" data-issuekey="SF-62" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-62" href="https://smarterdharma.atlassian.net/browse/SF-62">SF-62</a>
+</td>
+                                            <td class="summary"><p>
+                Interventions Detailed Page - I don’t see a comparison in this chart for different end uses.
+    </p>
+</td>
+                                            <td class="description">      !image-20230907-095338.png|width=539,height=613!
+  </td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:23 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10749" rel="10749" data-issuekey="SF-63" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-63" href="https://smarterdharma.atlassian.net/browse/SF-63">SF-63</a>
+</td>
+                                            <td class="summary"><p>
+                Project Details Page - From a value perspective, this is customization where input parameters can be changed. This is an administrative action, hence it need not be front and center.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:24 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10750" rel="10750" data-issuekey="SF-64" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-64" href="https://smarterdharma.atlassian.net/browse/SF-64">SF-64</a>
+</td>
+                                            <td class="summary"><p>
+                Project Details Page - Lack of navigation bars and goals
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:25 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10751" rel="10751" data-issuekey="SF-65" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-65" href="https://smarterdharma.atlassian.net/browse/SF-65">SF-65</a>
+</td>
+                                            <td class="summary"><p>
+                Goals Page - There is lack of clarity why these goals are the relevant or most important goals for the project.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:25 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10752" rel="10752" data-issuekey="SF-66" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-66" href="https://smarterdharma.atlassian.net/browse/SF-66">SF-66</a>
+</td>
+                                            <td class="summary"><p>
+                Goals Page - Visibility of the full gamut of possible goals would be valuable to drive action (expansion of intervention through design change).
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:26 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10753" rel="10753" data-issuekey="SF-67" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-67" href="https://smarterdharma.atlassian.net/browse/SF-67">SF-67</a>
+</td>
+                                            <td class="summary"><p>
+                Goals Page - Addition of which interventions are contributing to that goal
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:27 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10754" rel="10754" data-issuekey="SF-68" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-68" href="https://smarterdharma.atlassian.net/browse/SF-68">SF-68</a>
+</td>
+                                            <td class="summary"><p>
+                Goals Page - Lack of navigation bars
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:27 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10755" rel="10755" data-issuekey="SF-69" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-69" href="https://smarterdharma.atlassian.net/browse/SF-69">SF-69</a>
+</td>
+                                            <td class="summary"><p>
+                Building Certification Page - Gold/Silver/Platinum level status badge is small and hard to recognize
+    </p>
+</td>
+                                            <td class="description">      !image-20230907-100442.png|width=383,height=193!
+  </td>
+                                            <td class="customfield_10034">    UI/Visual
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:34 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10756" rel="10756" data-issuekey="SF-70" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-70" href="https://smarterdharma.atlassian.net/browse/SF-70">SF-70</a>
+</td>
+                                            <td class="summary"><p>
+                Marketplace (Catalog) - Currently no way to compare product side by side
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:35 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10757" rel="10757" data-issuekey="SF-71" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-71" href="https://smarterdharma.atlassian.net/browse/SF-71">SF-71</a>
+</td>
+                                            <td class="summary"><p>
+                Marketplace (Catalog) - On the product page, brand reference is buried.
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Usability
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:35 PM </td>
+                    </tr>
+
+
+                <tr id="issuerow10758" rel="10758" data-issuekey="SF-72" class="issuerow">
+                                            <td class="issuetype">    Task
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="SF-72" href="https://smarterdharma.atlassian.net/browse/SF-72">SF-72</a>
+</td>
+                                            <td class="summary"><p>
+                Marketplace (Catalog) - Addition of a pricing filter
+    </p>
+</td>
+                                            <td class="description"></td>
+                                            <td class="customfield_10034">    Feature
+</td>
+                                            <td class="labels">    Increment</td>
+                                            <td class="customfield_10004"></td>
+                                            <td class="customfield_10006"></td>
+                                            <td class="reporter">            Avik Roy
+    </td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;To Do&lt;/span&gt;">To Do</span>    </td>
+                                            <td class="created"> 07/Sep/23 3:36 PM </td>
+                    </tr>
+        </tbody>
+    </table>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="13"><font size="1">
+        Generated at Mon Sep 11 04:31:52 UTC 2023 by Avik Roy using Jira 1001.0.0-SNAPSHOT#100236-sha1:e58399393146347a880b0385d7dc15fa1f65ae7c.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>
